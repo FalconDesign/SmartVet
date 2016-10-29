@@ -1,0 +1,131 @@
+@import 'B - custom-classes.sass'
+@import 'C - variables.sass'
+
+
+@media (max-width: 1000px)
+    .navbar-header
+        float: none
+
+    .navbar-left,.navbar-right
+        float: none !important
+
+    .navbar-toggle
+        display: block
+
+    .navbar-collapse
+        border-top: 1px solid transparent
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+
+    .navbar-fixed-top
+        top: 0
+        border-width: 0 0 1px
+
+    .navbar-collapse.collapse
+        display: none!important
+
+    .navbar-nav
+        float: none!important
+        margin-top: 7.5px
+
+    .navbar-nav>li
+        float: none
+
+    .navbar-nav>li>a
+        padding-top: 10px
+        padding-bottom: 10px
+
+    .collapse.in
+        display:block !important
+
+
+
+body
+  font-family: sans-serif !important
+
+// header
+
+.navbar-collapse.in
+    overflow: hidden !important
+
+.navbar-toggle
+  padding: 12px
+  margin-top: 10px
+
+.navbar-header
+  height: 65px
+
+.navbar
+  border: none
+  margin-bottom: 0
+
+.container
+  @media (min-width: 992px)
+    width: 100%
+    max-width: 1170px !important
+
+  a.navbar-brand
+    padding: 0 0 0 15px
+    @media (max-width: 768px)
+      padding: 0 !important
+    img.logo
+      height: 45px
+      margin-top: 10px
+
+.navbar-collapse.collapse
+  padding-left: 0
+  padding-right: 0
+
+ul.nav.navbar-nav
+  li
+    height: 65px
+    a
+      color: black
+      height: 100%
+      padding-top: 0
+      padding-bottom: 0
+      display: flex
+      align-items: center
+      justify-content: center
+    &:hover
+      background-color: $orange
+      a
+        color: white
+
+
+// footer
+
+footer
+  a.navbar-brand
+    float: none
+    padding: 0 0 0 0px !important
+    display: block
+    margin: 0 !important
+    height: auto!important
+    img.logo
+      height: 58px !important
+      display: inline
+
+  .a-the-clock
+    float: left
+    clear: both
+    font-size: 30px
+    font-weight: 200 !important
+    span
+      font-weight: 600 !important
+    @media (max-width: 1040px)
+      font-size: 25px !important
+    @media (max-width: 768px)
+      float: none !important
+      display: block
+
+  .numbers
+    font-size: 30px
+    font-weight: 200
+    float: right
+    .partnters
+      color: $purple
+    @media (max-width: 1040px)
+      font-size: 25px !important
+    @media (max-width: 768px)
+      float: none !important
+      display: block

@@ -1,0 +1,61 @@
+-title = "SmartVet"
+doctype html
+html
+  head
+    title=title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1" )
+      
+    script(src="scripts/modernizr-custom.js", charset="utf-8")
+    script(src="scripts/lib/angular.min.js", charset="utf-8")
+    script(src="../../node_modules/angular-animate/angular-animate.js", charset="utf-8")
+    script(src="scripts/lib/ui-bootstrap.js", charset="utf-8")
+    script(src="scripts/lib/ctrl.js", charset="utf-8")
+      
+    link(rel="stylesheet", href="css/lib/bootstrap.min.css", media="screen", title="no title")
+    link(rel="stylesheet", href="css/all.css", media="screen", title="no title")
+
+  body
+    main#page(ng-app="SmartVetApp")
+      header(ng-controller="mainCtrl")
+        nav.navbar.navbar-default.bg-warning
+          .container
+            .row
+              .col-md-10.center-block
+                .navbar-header
+                  a.navbar-brand(href="#"): img.logo(src="img/logo_smartvet.png")
+                  button.navbar-toggle(ng-init="isCollapsed = true", ng-click="isCollapsed = !isCollapsed", type="button")
+                    span.sr-only Toggle Navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar  
+                #navbar.navbar-collapse(uib-collapse="isCollapsed")
+                  ul.nav.navbar-nav.navbar-right.text-uppercase
+                    li: a.align-center(href="#") Главная
+                    li: a.align-center(href="#") О клинике
+                    li: a.align-center(href="#") Вет Аптека
+                    li: a.align-center(href="#") Вопросы и ответы
+                    li: a.align-center(href="#") Контакты
+      footer.navbar-default
+        .container
+          .row
+            .col-md-10.center-block.clearfix
+              a.navbar-brand.text-md-center(href="#"): img.logo(src="img/logo_smartvet.png")
+              span.a-the-clock.text-md-center
+                | <span>КРУГЛОСУТОЧНО!</span> <br />
+                | Ветеринарная клиника <br />
+                | Ветеринарная аптека <br />
+                | г. Боярка, ул. Соборности,51А
+                
+              span.numbers.text-md-center
+                | тел.(099) 064 91 73 <br />
+                | тел.(068) 477 07 33 <br />
+                |<b>Наши партнеры:</b>
+                br
+                a.partnters(href="http://www.vet-zoosvit.kiev.ua/", target="_blank") http://www.vet-zoosvit.kiev.ua/
+
+                  
+      
+                    
+
+                    

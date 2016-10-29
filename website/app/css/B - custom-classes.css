@@ -1,0 +1,11 @@
+.align-center {
+  display: flex;
+  align-items: center; }
+
+.center-block {
+  margin: 0 auto;
+  float: none; }
+
+@media (max-width: 768px) {
+  .text-md-center {
+    text-align: center; } }
