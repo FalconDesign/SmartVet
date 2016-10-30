@@ -1,0 +1,26 @@
+#farmacy {
+  background: url("../img/contatcs.jpg") no-repeat center/cover; }
+  #farmacy .col-md-10 {
+    background-color: rgba(0, 0, 0, 0.6); }
+    #farmacy .col-md-10 .cover {
+      padding: 35px 0 45px 0;
+      width: 100%;
+      max-width: 770px; }
+      #farmacy .col-md-10 .cover .farmacy-clinic {
+        color: white;
+        font-size: 18px; }
+        #farmacy .col-md-10 .cover .farmacy-clinic figure img {
+          margin: 25px 50px 25px 0;
+          float: left;
+          clear: both; }
+        @media (max-width: 550px) {
+          #farmacy .col-md-10 .cover .farmacy-clinic {
+            text-align: center;
+            font-size: 15px; }
+            #farmacy .col-md-10 .cover .farmacy-clinic figure {
+              text-align: center !important; }
+              #farmacy .col-md-10 .cover .farmacy-clinic figure img {
+                float: none !important;
+                clear: none !important;
+                width: 70vw;
+                margin-right: 0; } }

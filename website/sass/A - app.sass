@@ -1,5 +1,10 @@
 @import 'B - custom-classes.sass'
 @import 'C - variables.sass'
+@import 'D - main.sass'
+@import 'E - about.sass'
+@import 'F - faq.sass'
+@import 'G - contacts.sass'
+@import 'H - farmacy.sass'
 
 
 @media (max-width: 1000px)
@@ -70,6 +75,9 @@ body
     img.logo
       height: 45px
       margin-top: 10px
+      @media (max-width: 330px)
+        margin-top: 15px
+        height: 30px
 
 .navbar-collapse.collapse
   padding-left: 0
@@ -86,15 +94,19 @@ ul.nav.navbar-nav
       display: flex
       align-items: center
       justify-content: center
-    &:hover
-      background-color: $orange
-      a
+      &:hover,
+      &:focus
+        background-color: $orange
         color: white
+      &:active
+        background-color: #e07c22
 
 
 // footer
 
 footer
+  padding: 10px 0 30px 0
+  color: $dark-font
   a.navbar-brand
     float: none
     padding: 0 0 0 0px !important
@@ -104,6 +116,8 @@ footer
     img.logo
       height: 58px !important
       display: inline
+      @media (max-width: 360px)
+        height: 45px !important
 
   .a-the-clock
     float: left

@@ -1,0 +1,14 @@
+#contacts {
+  background: url("../img/contatcs.jpg") no-repeat center/cover; }
+  #contacts .col-md-10 {
+    background-color: rgba(0, 0, 0, 0.6); }
+    #contacts .col-md-10 .cover {
+      padding: 35px 0 45px 0; }
+      #contacts .col-md-10 .cover .contacts-clinic {
+        color: white;
+        font-size: 30px; }
+        @media (max-width: 700px) {
+          #contacts .col-md-10 .cover .contacts-clinic {
+            font-size: 25px; } }
+        #contacts .col-md-10 .cover .contacts-clinic .map img {
+          width: 100%; }

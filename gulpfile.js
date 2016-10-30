@@ -52,6 +52,7 @@ gulp.task('prefixer', () => {
 gulp.task('watch', () => {
   gulp.watch('website/sass/*.sass', ['styles']);
   gulp.watch('website/jade/*.jade', ['jade']);
+  gulp.watch('website/jade/sections/*.jade', ['jade']);
   gulp.watch('website/app/css/*.css', ['prefixer']);
   gulp.watch('website/img-compress/*', ['image']);
 });

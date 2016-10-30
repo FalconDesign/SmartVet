@@ -1,0 +1,15 @@
+#about {
+  background: url("../img/hero_02.jpg") no-repeat center/cover; }
+  #about .col-md-10 {
+    background-color: rgba(0, 0, 0, 0.6); }
+    #about .col-md-10 .cover {
+      padding: 35px 0 45px 0;
+      width: 100%;
+      max-width: 770px; }
+      #about .col-md-10 .cover .about-clinic {
+        color: white;
+        font-size: 18px; }
+        @media (max-width: 400px) {
+          #about .col-md-10 .cover .about-clinic {
+            text-align: center;
+            font-size: 15px; } }
